@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Fusion</title>
+    <link rel="icon" type="image/png" href="Fusion.png">    
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <img src="Fusion.png" alt="Fusion Logo" class="brand-logo" onerror="this.style.display='none'">
+                <div class="brand-text">
+                    <h1>Fusion</h1>
+                    <span>The Cultural Society of ASB</span>
+                </div>
+            </a>
+            
+            <!-- CSS-Only Mobile Navigation -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- PAGE HERO -->
+        <section class="page-hero">
+            <div class="hero-overlay bg-gold-gradient"></div>
+            <div class="container page-hero-content fade-up-1">
+                <div class="cultural-accent-line mx-auto"></div>
+                <h1 class="page-title">Connect & Join</h1>
+                <p class="page-subtitle">Become a Part of Fusion</p>
+            </div>
+        </section>
+
+        <!-- CONTACT DETAILS & FORMS SECTION -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <!-- LEFT COLUMN: Contact Details & Socials -->
+                    <div class="contact-info-wrapper fade-up-2">
+                        <span class="section-label">Get In Touch</span>
+                        <h2 class="section-heading">Connect with our society.</h2>
+                        <p class="contact-intro">Whether you're looking to showcase your artistic talent, join our core departments, or collaborate across college circuits, we're eager to hear from you.</p>
+
+                        <div class="info-blocks">
+                            <!-- Email -->
+                            <div class="info-block">
+                                <div class="info-icon text-teal"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-text">
+                                    <h3>Email Us</h3>
+                                    <a href="mailto:fusion.cultural@asb.amity.edu" class="info-link">fusion.cultural@asb.amity.edu</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="info-block">
+                                <div class="info-icon text-saffron"><i class="fa-solid fa-map-location-dot"></i></div>
+                                <div class="info-text">
+                                    <h3>Location</h3>
+                                    <p class="info-detail">Amity School of Business (ASB), K-3 Block, Amity University, Sector 125, Noida</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Media Links -->
+                        <div class="social-connect">
+                            <h3>Official Channels</h3>
+                            <div class="large-social-icons">
+                                <a href="https://www.instagram.com/fusion_asb/" aria-label="Instagram" class="social-circle bg-hover-purple">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@fusionasb" aria-label="YouTube" class="social-circle bg-hover-red">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="#" aria-label="LinkedIn" class="social-circle bg-hover-teal">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#map-section" aria-label="Google Maps" class="social-circle bg-hover-gold">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Interactive Dual Google Forms -->
+                    <div class="contact-form-wrapper fade-up-3">
+                        <div class="forms-card">
+                            
+                            <!-- Radio State Toggles (CSS Only) -->
+                            <input type="radio" name="form-toggle" id="toggle-amity" class="form-radio" checked>
+                            <input type="radio" name="form-toggle" id="toggle-nonamity" class="form-radio">
+
+                            <!-- Tab Pill Selectors -->
+                            <div class="form-tab-nav">
+                                <label for="toggle-amity" class="form-tab-btn tab-amity-btn">
+                                    <i class="fa-solid fa-id-card"></i>
+                                    <span>ASB & Amity Students<small>Membership / Join Society</small></span>
+                                </label>
+                                <label for="toggle-nonamity" class="form-tab-btn tab-nonamity-btn">
+                                    <i class="fa-solid fa-handshake"></i>
+                                    <span>External Students<small>Event Collaboration</small></span>
+                                </label>
+                            </div>
+
+                            <!-- Form 1: Amity / ASB Club Recruitment -->
+                            <div class="form-display-panel panel-amity">
+                                <div class="form-panel-header">
+                                    <h3>Join Fusion Society</h3>
+                                    <p>Exclusively for current Amity University & ASB students looking to audition or join our performing and supporting departments.</p>
+                                </div>
+                                <div class="iframe-container">
+                                    <!-- Replace the src with your actual Google Form embed link -->
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHcOyJF9HEz5KXIOAVMoSDwWcvU71rpYvvNH26fVdSpCmOKg/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0">Loading Recruitment Form…</iframe>
+                                </div>
+                            </div>
+
+                            <!-- Form 2: Non-Amity Event Collaboration -->
+                            <div class="form-display-panel panel-nonamity">
+                                <div class="form-panel-header">
+                                    <h3>Event Collaborations</h3>
+                                    <p>For societies, performers, and students from external universities interested in partnering or participating in our upcoming cultural fests.</p>
+                                </div>
+                                <div class="iframe-container">
+                                    <!-- Replace the src with your actual Google Form embed link -->
+                                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHcOyJF9HEz5KXIOAVMoSDwWcvU71rpYvvNH26fVdSpCmOKg/viewform?usp=dialog" frameborder="0" marginheight="0" marginwidth="0">Loading Collaboration Form…</iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- MAP SECTION -->
+        <section class="map-section bg-cream" id="map-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Find Us On Campus</span>
+                    <h2 class="section-heading">Our Campus Location</h2>
+                    <p class="map-subtitle">Amity School of Business (ASB), Sector 125, Noida, Uttar Pradesh</p>
+                </div>
+                
+                <div class="map-wrapper">
+                    <!-- Embedded Google Map -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.833333147285!2d77.3361079!3d28.5447289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce553b16bb347%3A0x656a4333181a7177!2sAmity%20School%20of%20Business%20(ASB)_K-3%2C%20Block!5e0!3m2!1sen!2sin!4v1789804305823!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Fusion</h3>
+                <p class="footer-subtitle">The Cultural Society of ASB</p>
+                <p class="footer-desc">Fostering creativity, preserving heritage, and building a community of passionate student artists through diverse cultural expressions.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/fusion_asb/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@fusionasb" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/fusion-asb/ " aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:teamfusion.asb@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Fusion: The Cultural Society of ASB. All Rights Reserved.</p>
+            <a href="https://www.instagram.com/mhussain.45/" target="_blank" class="designer">Designed by Mhussain45 & Ann</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

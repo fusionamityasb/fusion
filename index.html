@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusion</title>
+    <link rel="icon" type="image/png" href="Fusion.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Page Specific CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <!-- Temporary Icon Logo -->
+                <img src="Fusion.png" alt="Fusion Logo" class="brand-logo" onerror="this.style.display='none'">
+                
+                <div class="brand-text">
+                    <h1>Fusion</h1>
+                        <span>The Cultural Society of ASB</span>
+                    </div>
+                </a>        
+            <!-- CSS-Only Mobile Navigation -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <nav class="site-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="cultural-accent-line"></div>
+                    <h2 class="hero-title fade-up-1">Where Culture Meets Expression.</h2>
+                    <p class="hero-desc fade-up-2">Experience the vibrant blend of tradition and modern creativity. Join the most dynamic student community at ASB, dedicated to celebrating art, heritage, and innovation.</p>
+                    <div class="hero-actions fade-up-3">
+                        <a href="events.html" class="btn btn-primary">Explore Events</a>
+                        <a href="team.html" class="btn btn-outline">Meet the Team</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="visual-wrapper">
+                        <!-- Decorative cultural background elements -->
+                        <div class="decor-circle decor-teal"></div>
+                        <div class="decor-circle decor-saffron"></div>
+                        <div class="image-box">
+                            <img src="images/home/hero-image.jpg" alt="Students performing at a cultural event" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT PREVIEW SECTION -->
+        <section class="about-preview">
+            <div class="container section-grid">
+                <div class="about-visual slide-right">
+                    <div class="about-image-wrapper">
+                        <img src="Event-2-1.jpeg" alt="Fusion Society Gathering">
+                        <div class="cultural-border-element"></div>
+                    </div>
+                </div>
+                <div class="about-text slide-left">
+                    <span class="section-label">Discover Fusion</span>
+                    <h2 class="section-heading">A Legacy of Creative Brilliance</h2>
+                    <p>Fusion is more than just a society; it is a movement that brings together diverse talents, backgrounds, and artistic disciplines under one unified cultural banner.</p>
+                    <p>We nurture student potential by providing a platform where classical heritage interweaves with contemporary arts.</p>
+                    <a href="about.html" class="link-arrow">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT WE DO SECTION -->
+        <section class="what-we-do bg-cream">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">Our Pillars</span>
+                    <h2 class="section-heading">What We Do</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card stagger-1">
+                        <div class="feature-icon icon-saffron"><i class="fa-solid fa-masks-theater"></i></div>
+                        <h3>Perform</h3>
+                        <p>Celebrating artistic expression through dance, drama, and musical performances on grand stages.</p>
+                    </div>
+                    <div class="feature-card stagger-2">
+                        <div class="feature-icon icon-teal"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Create</h3>
+                        <p>Encouraging creativity, innovative ideas, and visual arts that challenge the ordinary.</p>
+                    </div>
+                    <div class="feature-card stagger-3">
+                        <div class="feature-icon icon-purple"><i class="fa-solid fa-drum"></i></div>
+                        <h3>Celebrate</h3>
+                        <p>Bringing our rich cultural traditions and contemporary expressions together in harmony.</p>
+                    </div>
+                    <div class="feature-card stagger-4">
+                        <div class="feature-icon icon-gold"><i class="fa-solid fa-users-rays"></i></div>
+                        <h3>Connect</h3>
+                        <p>Building a lifelong community of talented individuals through shared cultural experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UPCOMING EVENTS SECTION -->
+        <section class="events-preview">
+            <div class="container">
+                <div class="section-header flex-between">
+                    <div>
+                        <span class="section-label">Join Us</span>
+                        <h2 class="section-heading">Upcoming Events</h2>
+                    </div>
+                    <a href="events.html" class="btn btn-outline d-desktop">View All Events</a>
+                </div>
+                <div class="events-grid">
+                    <!-- Event Card 1 -->
+                    <article class="event-card stagger-1">
+                        <div class="event-image">
+                            <img src="Dandiya.jpg" alt="Bollywood Dandiya 2026">
+                            <span class="event-category bg-teal">Festival</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Oct 15, 2026</span>
+                                <span><i class="fa-solid fa-location-dot"></i> K3 Block</span>
+                            </div>
+                            <h3 class="event-title">Bollywood Dandiya 2026</h3>
+                            <p class="event-desc">Celebrate Navratri with Bollywood beats, traditional dandiya, and vibrant festive energy!</p>
+                            <a href="events.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Event Card 2 -->
+                    <article class="event-card stagger-2">
+                        <div class="event-image">
+                            <img src="Diwali.avif" alt="Diwali Celebration">
+                            <span class="event-category bg-teal">Festival</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> To be announced</span>
+                                <span><i class="fa-solid fa-location-dot"></i> K3 Block</span>
+                            </div>
+                            <h3 class="event-title">Diwali Celebration</h3>
+                            <p class="event-desc">Celebrate the festival of lights with vibrant decorations, festive activities, and joyful moments together!</p>
+                            <a href="events.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="event-card stagger-3">
+                        <div class="event-image">
+                            <img src="Christmas.avif" alt="Christmas Carnival">
+                            <span class="event-category bg-teal">Festival</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> To be announced</span>
+                                <span><i class="fa-solid fa-location-dot"></i> K3 Block</span>
+                            </div>
+                            <h3 class="event-title">Christmas Carnival</h3>
+                            <p class="event-desc">Get ready for Christmas cheer, exciting games, creative activities, and festive fun!</p>
+                            <a href="events.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-mobile">
+                    <a href="events.html" class="btn btn-outline d-mobile">View All Events</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CULTURAL STATEMENT -->
+        <section class="cultural-statement">
+            <div class="statement-overlay"></div>
+            <div class="container statement-content">
+                <div class="decorative-mandala"></div>
+                <h2>Many expressions. One spirit.</h2>
+                <p>We believe that true creativity blossoms where diversity is celebrated. Fusion is the canvas where traditional roots meet the wings of modern student expression.</p>
+            </div>
+        </section>
+
+        <!-- TEAM PREVIEW SECTION -->
+        <section class="team-preview bg-cream">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-label">The People Behind The Art</span>
+                    <h2 class="section-heading">Meet the Team</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card stagger-1">
+                        <div class="team-img-wrapper">
+                            <img src="Tanvi.jpeg" alt="Vice President">
+                        </div>
+                        <div class="team-info">
+                            <h3>Tanvi Anand</h3>
+                            <span class="designation">Vice President</span>
+                        </div>
+                    </div>
+                    <div class="team-card stagger-2">
+                        <div class="team-img-wrapper">
+                            <img src="Ansab.png" alt="President">
+                        </div>
+                        <div class="team-info">
+                            <h3>Ansab Sajid</h3>
+                            <span class="designation">President</span>
+                        </div>
+                    </div>
+                    <div class="team-card stagger-3">
+                        <div class="team-img-wrapper">
+                            <img src="Ritvik.svg" alt="Vice President">
+                        </div>
+                        <div class="team-info">
+                            <h3>Ritvik Bajaj</h3>
+                            <span class="designation">Vice President</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-large">
+                    <a href="team.html" class="link-arrow large-link">View Full Team<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLOSING CTA -->
+        <section class="closing-cta">
+            <div class="container text-center">
+                <h2>Be part of the expression.</h2>
+                <p>Whether you are an artist, an organizer, or an enthusiast, there is a place for you in Fusion.</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Fusion</h3>
+                <p class="footer-subtitle">The Cultural Society of ASB</p>
+                <p class="footer-desc">Fostering creativity, preserving heritage, and building a community of passionate student artists through diverse cultural expressions.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/fusion_asb/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@fusionasb" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/fusion-asb/ " aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:teamfusion.asb@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Fusion: The Cultural Society of ASB. All Rights Reserved.</p>
+            <a href="https://www.instagram.com/mhussain.45/" target="_blank" class="designer">Designed by Mhussain45 & Ann</a>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
