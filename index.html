@@ -50,6 +50,61 @@
         </div>
     </header>
 
+<!-- ==========================================================================
+     ONGOING EVENT POPUP MODAL (CSS-ONLY AUTO LAUNCH)
+     ========================================================================== -->
+<div class="ongoing-modal-wrapper">
+    <!-- Checkbox controller for closing the modal -->
+    <input type="checkbox" id="close-modal-toggle" class="modal-toggle-checkbox">
+
+    <div class="event-modal-backdrop">
+        <div class="event-modal-card">
+            
+            <!-- Dismiss / Close Button -->
+            <label for="close-modal-toggle" class="modal-close-btn" title="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <!-- Modal Content Grid -->
+            <div class="modal-grid">
+                
+                <!-- Left: Poster Image Placeholder -->
+                <div class="modal-poster-side">
+                    <span class="modal-live-badge"><i class="fa-solid fa-circle-dot"></i> Ongoing Event</span>
+                    <img src="images/events/ongoing-poster.jpg" alt="Bollywood Dandiya 2026">
+                </div>
+
+                <!-- Right: Quick Event Brief & Action -->
+                <div class="modal-info-side">
+                    <span class="section-label">Happening Now</span>
+                    <h2 class="modal-event-title">Bollywood Dandiya 2026</h2>
+                    <p class="modal-event-desc">
+                        Celebrate Navratri with Bollywood beats, traditional dandiya, and vibrant festive energy.
+                    </p>
+
+                    <!-- Key Event Snapshot -->
+                    <div class="modal-meta-pills">
+                        <span><i class="fa-regular fa-calendar text-saffron"></i> Oct 15</span>
+                        <span><i class="fa-solid fa-location-dot text-teal"></i> K3 Block 1st Floor</span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="modal-actions">
+                        <a href="dandiya26.html" class="btn btn-primary">
+                            Register Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <!-- Option to dismiss and explore site -->
+                        <label for="close-modal-toggle" class="modal-skip-link">
+                            Explore Website
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
@@ -57,7 +112,7 @@
                 <div class="hero-content">
                     <div class="cultural-accent-line"></div>
                     <h2 class="hero-title fade-up-1">Where Culture Meets Expression.</h2>
-                    <p class="hero-desc fade-up-2">Experience the vibrant blend of tradition and modern creativity. Join the most dynamic student community at ASB, dedicated to celebrating art, heritage, and innovation.</p>
+                    <p class="hero-desc fade-up-2">Experience the vibrant blend of tradition and modern creativity. Join the most dynamic student community at <strong> AMITY SCHOOL OF BUSINESS, AMITY UNIVERSITY NOIDA,</strong> dedicated to celebrating art, heritage, and innovation.</p>
                     <div class="hero-actions fade-up-3">
                         <a href="events.html" class="btn btn-primary">Explore Events</a>
                         <a href="team.html" class="btn btn-outline">Meet the Team</a>
@@ -81,7 +136,7 @@
             <div class="container section-grid">
                 <div class="about-visual slide-right">
                     <div class="about-image-wrapper">
-                        <img src="Event-2-1.jpeg" alt="Fusion Society Gathering">
+                        <img src="independence26-1.jpeg" alt="Fusion Society Gathering">
                         <div class="cultural-border-element"></div>
                     </div>
                 </div>
@@ -193,6 +248,71 @@
             </div>
         </section>
 
+        <section class="events-preview">
+            <div class="container">
+                <div class="section-header flex-between">
+                    <div>
+                        <span class="section-label">Join Us</span>
+                        <h2 class="section-heading">Our Events</h2>
+                    </div>
+                    <a href="events.html" class="btn btn-outline d-desktop">View All Events</a>
+                </div>
+                <div class="events-grid">
+                    <!-- Event Card 1 -->
+                    <article class="event-card stagger-1">
+                        <div class="event-image">
+                            <img src="Dandiya.jpg" alt="Bollywood Dandiya 2026">
+                            <span class="event-category bg-teal">Upcoming</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Oct 15, 2026</span>
+                                <span><i class="fa-solid fa-location-dot"></i> K3 Block</span>
+                            </div>
+                            <h3 class="event-title">Bollywood Dandiya 2026</h3>
+                            <p class="event-desc">Celebrate Navratri with Bollywood beats, traditional dandiya, and vibrant festive energy!</p>
+                            <a href="events.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    
+                    <!-- Event Card 2 -->
+                    <article class="event-card stagger-2">
+                        <div class="event-image">
+                            <img src="Freshers26-5.jpeg" alt="Freshers 2026">
+                            <span class="event-category bg-saffron">Fest</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Sep 10, 2026</span>
+                                <span><i class="fa-solid fa-location-dot"></i> E2 Auditorium</span>
+                            </div>
+                            <h3 class="event-title">Freshers 2026</h3>
+                            <p class="event-desc">Welcoming the spring with classical performances, floral decorations, and a fusion music night.!</p>
+                            <a href="Freshers26.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="event-card stagger-3">
+                        <div class="event-image">
+                            <img src="Independence26-1.jpeg" alt="Independence Day Celebration">
+                            <span class="event-category bg-saffron">Celebration</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-meta">
+                                <span><i class="fa-regular fa-calendar"></i> Aug 12&13, 2026</span>
+                                <span><i class="fa-solid fa-location-dot"></i> K3 Block</span>
+                            </div>
+                            <h3 class="event-title">Independence Day Celebration</h3>
+                            <p class="event-desc">A dual-show tribute blending melodic patriotism and visual storytelling.</p>
+                            <a href="independence26.html" class="link-arrow">View Event <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="text-center mt-mobile">
+                    <a href="events.html" class="btn btn-outline d-mobile">View All Events</a>
+                </div>
+            </div>
+        </section>
+        
         <!-- CULTURAL STATEMENT -->
         <section class="cultural-statement">
             <div class="statement-overlay"></div>
@@ -287,7 +407,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <p>&copy; 2026 Fusion: The Cultural Society of ASB. All Rights Reserved.</p>
-            <a href="https://www.instagram.com/mhussain.45/" target="_blank" class="designer">Designed by Mhussain45 & Ann</a>
+            <a href="https://www.instagram.com/mhussain.45/" target="_blank" class="designer">Designed by Mhussain45 </a>
+            <a href="https://www.instagram.com/ann_susan_johnson?stkn=ajNiOGd2bDl2Zmdo/" target="_blank" class="designer"> & Ann</a>
             </div>
         </div>
 </footer>
