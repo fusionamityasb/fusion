@@ -108,6 +108,7 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================================================== */
 .event-report-section {
     padding: 80px 0;
+    text-align: justify;
 }
 
 .report-container {

@@ -767,3 +767,189 @@ img { max-width: 100%; height: auto; display: block; }
         scroll-behavior: auto !important;
     }
 }
+/* ==========================================================================
+   OUR IDENTITY: EDITORIAL SPREAD
+   ========================================================================== */
+.identity-section {
+    padding: 100px 0;
+    background-color: var(--white);
+    position: relative;
+}
+
+.identity-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+/* Left Narrative Column */
+.identity-text-col .section-heading {
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.identity-text-col .lead-paragraph {
+    font-size: 1.15rem;
+    color: var(--charcoal);
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.identity-text-col p {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 20px;
+}
+
+/* Pillars List */
+.identity-pillars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 35px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border);
+}
+
+.pillar-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.pillar-num {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pillar-item h4 {
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.pillar-item p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   RIGHT EDITORIAL MEDIA FRAME
+   ========================================================================== */
+.identity-media-col {
+    position: relative;
+}
+
+.editorial-frame {
+    position: relative;
+    padding: 15px;
+    background: var(--cream);
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Editorial Floating Accent Tag */
+.editorial-accent-tag {
+    position: absolute;
+    top: -15px;
+    right: 25px;
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    box-shadow: 0 6px 15px rgba(201, 154, 61, 0.35);
+    z-index: 3;
+}
+
+.editorial-accent-tag i {
+    margin-right: 6px;
+}
+
+/* Main Image Container (4:5 Editorial Portrait Ratio) */
+.editorial-img-box {
+    position: relative;
+    Height: auto;
+    width: 90%;
+    aspect-ratio: 54/53;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #202020;
+}
+
+.editorial-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.7s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.editorial-frame:hover .editorial-img-box img {
+    transform: scale(1.04);
+}
+
+/* Editorial Caption Card */
+.editorial-caption-card {
+    padding: 22px 15px 10px;
+    text-align: center;
+}
+
+.quote-text {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: 1.05rem;
+    color: var(--charcoal);
+    margin-bottom: 6px !important;
+}
+
+.quote-author {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--saffron);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (IDENTITY EDITORIAL)
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .identity-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .identity-media-col {
+        max-width: 520px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .identity-text-col .section-heading {
+        font-size: 2.2rem;
+    }
+
+    .identity-pillars {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .editorial-accent-tag {
+        right: 15px;
+        font-size: 0.7rem;
+        padding: 6px 14px;
+    }
+}

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   RESET & GLOBAL VARIABLES (diwali25.css)
+   RESET & GLOBAL VARIABLES (icesbd26.css)
    ========================================================================== */
 :root {
     --white: #ffffff;
@@ -39,7 +39,7 @@ img { max-width: 100%; height: auto; display: block; }
 .text-teal { color: var(--teal); }
 .text-purple { color: var(--purple); }
 .text-gold { color: var(--gold); }
-.bg-gold { background-color: var(--gold); }
+.bg-teal { background-color: var(--teal); color: var(--white); }
 
 /* ==========================================================================
    HEADER & NAVIGATION
@@ -135,6 +135,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-weight: 400;
     color: var(--charcoal);
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .report-container p {
@@ -171,7 +172,7 @@ img { max-width: 100%; height: auto; display: block; }
 .highlight-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-sm);
-    border-left-color: var(--gold);
+    border-left-color: var(--teal);
 }
 
 .highlight-card i {

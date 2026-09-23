@@ -353,3 +353,14 @@ img { max-width: 100%; height: auto; display: block; }
     transform: none !important;     /* Prevents any hover animation or movement */
     box-shadow: none !important;
 }
+.btn-primary {
+    background-color: var(--saffron);
+    color: var(--white);
+    border: 2px solid var(--saffron);
+}
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--saffron);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(232, 117, 36, 0.2);
+}
