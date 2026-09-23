@@ -873,3 +873,128 @@ img { max-width: 100%; height: auto; display: block; }
         font-size: 0.95rem;
     }
 }
+/* ==========================================================================
+   GLIMPSES BLOCK (ASYMMETRIC BALANCED LAYOUT)
+   ========================================================================== */
+.event-glimpses-block {
+    background: var(--white);
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Prevents any card bleed */
+}
+
+.glimpses-header {
+    margin-bottom: 18px;
+}
+
+.glimpses-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--saffron);
+    margin-bottom: 4px;
+}
+
+.glimpses-title {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    color: var(--charcoal);
+    margin: 0;
+}
+
+/* 2-Column Grid: Reel on left, Photos stacked on right */
+.glimpses-asym-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 14px;
+    align-items: start;
+}
+.glimpse-card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #111;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    min-width: 0; /* Crucial: stops CSS grid child overflow */
+}
+
+.card-reel {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: auto;
+    align-self: start;
+}
+
+.card-reel video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.media-type-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    color: var(--white);
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Right Side Stack */
+.glimpses-photo-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+}
+
+.card-landscape {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.card-portrait {
+    width: 100%;
+    flex: 1; /* Fills remaining height naturally */
+    min-height: 140px;
+}
+
+.glimpse-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.glimpse-card:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .glimpses-asym-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-reel {
+        aspect-ratio: 9 / 16;
+        max-height: 380px;
+    }
+}
