@@ -713,3 +713,163 @@ img { max-width: 100%; height: auto; display: block; }
     background: var(--white);
     border-color: var(--gold);
 }
+/* ==========================================================================
+   REGISTRATION ACTION CARD & BUTTON (REPLACES IFRAME)
+   ========================================================================== */
+.form-action-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.form-action-icon {
+    width: 80px;
+    height: 80px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.form-action-box:hover .form-action-icon {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.form-action-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.form-action-box .action-desc {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-large {
+    padding: 18px 42px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(232, 117, 36, 0.25);
+    margin-top: 15px;
+}
+
+.btn-large:hover {
+    box-shadow: 0 14px 28px rgba(232, 117, 36, 0.35);
+}
+
+@media (max-width: 600px) {
+    .btn-large {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 0.95rem;
+    }
+}
+/* ==========================================================================
+   REGISTRATION SECTION (SINGLE UNIFIED FORM CARD)
+   ========================================================================== */
+.registration-section {
+    padding: var(--section-pad);
+}
+
+.single-form-card {
+    max-width: 820px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow-lg);
+    border-top: 4px solid var(--saffron);
+    padding: 50px 40px;
+}
+
+.form-action-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-action-icon {
+    width: 84px;
+    height: 84px;
+    background-color: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.form-action-box:hover .form-action-icon {
+    transform: scale(1.08) translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.form-action-box h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.form-action-box .action-desc {
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 25px;
+}
+
+.panel-alert {
+    background-color: var(--cream);
+    padding: 16px 22px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 0.95rem;
+    color: var(--charcoal);
+    margin-bottom: 30px;
+    border-left: 4px solid var(--teal);
+    text-align: left;
+}
+
+.btn-large {
+    padding: 18px 44px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(232, 117, 36, 0.25);
+}
+
+.btn-large:hover {
+    box-shadow: 0 14px 28px rgba(232, 117, 36, 0.35);
+}
+
+@media (max-width: 600px) {
+    .single-form-card {
+        padding: 35px 20px;
+    }
+    
+    .form-action-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .btn-large {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 0.95rem;
+    }
+}

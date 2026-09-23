@@ -87,8 +87,9 @@
                                 <img src="Multiworkwala.png" alt="MultiWorkWala Logo">
                             </div>
                             <div class="sponsor-mini-info">
-                                <h4>MultiWorkWala Pvt. Ltd.</h4>
-                                <span class="badge-tag">Our Sponsor</span>
+                                <a href="https://www.multiworkwala.com" target="_blank" rel="noopener noreferrer">
+                                    <h4>MultiWorkWala Pvt. Ltd.</h4>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                             <i class="fa-solid fa-graduation-cap text-gold"></i>
                             <div>
                                 <h5>Eligibility</h5>
-                                <p>Amity & Outside University Students</p>
+                                <p>Amity University Students</p>
                             </div>
                         </div>
                     </div>
@@ -154,61 +155,30 @@
             </div>
         </section>
 
-        <!-- REGISTRATION SECTION (CSS-ONLY DUAL / SINGLE GOOGLE FORM TABS) -->
+<!-- REGISTRATION SECTION (SINGLE UNIFIED FORM) -->
         <section class="registration-section bg-cream" id="registration-area">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-label">Enroll Today</span>
                     <h2 class="section-heading">Registration Desk</h2>
-                    <p class="section-subtext">Please select your category below to complete your official slot registration via Google Forms.</p>
+                    <p class="section-subtext">Open to all students from Amity University and external colleges. Click below to complete your registration in a new window.</p>
                 </div>
 
-                <div class="registration-card">
-                    
-                    <!-- CSS Radio Controllers for Category Switching -->
-                    <input type="radio" name="reg-category" id="reg-amity" class="reg-radio" checked>
-                    <input type="radio" name="reg-category" id="reg-external" class="reg-radio">
-
-                    <!-- Category Tab Selectors -->
-                    <div class="reg-tab-header">
-                        <label for="reg-amity" class="reg-tab-btn tab-amity-btn">
-                            <i class="fa-solid fa-building-columns"></i>
-                            <div class="tab-btn-text">
-                                <strong>ASB & Amity Students</strong>
-                                <span>Internal Campus Registration</span>
-                            </div>
-                        </label>
+                <div class="registration-card single-form-card">
+                    <div class="form-action-box">
+                        <div class="form-action-icon text-saffron">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                        </div>
                         
-                        <!-- REMOVE OR HIDE THIS SECOND TAB IF EVENT IS "ONLY FOR AMITY STUDENTS" -->
-                        <label for="reg-external" class="reg-tab-btn tab-external-btn">
-                            <i class="fa-solid fa-globe"></i>
-                            <div class="tab-btn-text">
-                                <strong>Non-Amity University Students</strong>
-                                <span>External Participants & Visitors</span>
-                            </div>
-                        </label>
-                    </div>
+                        <h3>Official Event Registration Form</h3>
+                        <p class="action-desc">This form is for Amity University students only. Please access the official Registration Form securely below.</p>
+                        
 
-                    <!-- Panel 1: Amity Students Form -->
-                    <div class="reg-panel panel-amity">
-                        <div class="google-form-frame">
-                            <!-- Replace src with your Amity-specific Google Form embed link -->
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyuKzZppcfeonwoTpukD5RLkwIX6NlIEdeJpOduxe9EhaX4Q/viewform?usp=sharing&ouid=109307788198361484931" frameborder="0" marginheight="0" marginwidth="0">Loading Registration Form…</iframe>
-                        </div>
+                        <!-- Replace href with your single Google Form link -->
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyuKzZppcfeonwoTpukD5RLkwIX6NlIEdeJpOduxe9EhaX4Q/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+                            Click Here to Fill Registration Form <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
                     </div>
-
-                    <!-- Panel 2: External Students Form -->
-                    <div class="reg-panel panel-external">
-                        <div class="panel-alert">
-                            <i class="fa-solid fa-circle-info text-saffron"></i>
-                            <span>Carrying a valid Government/College Photo ID card is mandatory on the day of the event for campus gate clearance.</span>
-                        </div>
-                        <div class="google-form-frame">
-                            <!-- Replace src with your External Google Form embed link -->
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyuKzZppcfeonwoTpukD5RLkwIX6NlIEdeJpOduxe9EhaX4Q/viewform?usp=sharing&ouid=109307788198361484931" frameborder="0" marginheight="0" marginwidth="0">Loading External Form…</iframe>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
